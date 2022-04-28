@@ -1,5 +1,6 @@
+GHC=ghc
 c_printClosure.o : c_printClosure.c
-	${GHC} -c $< -o $@ -g3 -optc-3
+	${GHC} -c $< -o $@ -g3 -optc-g3
 
 cmm_printClosure.o : cmm_printClosure.cmm
 	${GHC} -c $< -o $@
