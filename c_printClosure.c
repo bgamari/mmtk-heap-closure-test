@@ -1,5 +1,7 @@
 #include "Rts.h"
 
+void printObj( StgClosure *obj );
+
 void c_printClosure(StgClosure *p) {
-    printf("%p\n", UNTAG_CLOSURE(p));
+    printObj(p);
 }
