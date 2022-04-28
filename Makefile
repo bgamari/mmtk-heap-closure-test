@@ -12,4 +12,4 @@ Main.o : Main.hs
 	${GHC} -c $< -o $@
 
 Main : Main.o cmm_printClosure.o c_printClosure.o
-	${GHC} $+ -g3 -debug -o $@ ${EXTRA_HC_OPTS}
+	${GHC} ${EXTRA_HC_OPTS} $+ -g3 -debug -o $@
