@@ -1,4 +1,7 @@
 GHC=ghc
+
+all : Main
+
 c_printClosure.o : c_printClosure.c
 	${GHC} -c $< -o $@ -g3 -optc-g3
 
