@@ -1,4 +1,4 @@
-GHC=ghc
+GHC ?= ghc
 
 all : Main
 
